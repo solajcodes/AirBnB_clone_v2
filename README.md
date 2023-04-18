@@ -9,6 +9,11 @@ This repository contains the second stage of a student project to build a clone 
 | Tasks | Files | Description |
 | ----- | ----- | ------ |
 | 0: Authors/README File | [AUTHORS](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/master/AUTHORS) | Project authors |
+| 1: Unittests | [tests](https://github.com/Jesulayomy/AirBnB_clone_v2/tree/master/tests) | Clean up unittests |
+| 2: Console | [console](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/master/console.py) | Imporve create command |
+| 3: Development | [dev](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/master/setup_mysql_dev.sql) | Create dev DB and User |
+| 4: Testing | [test](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/master/setup_mysql_test.sql) | Create test DB and User |
+| 5: FileStorage | [File](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/master/models/engine/file_storage.py) | Adding Delete feature |
 <br>
 <br>
 <center> <h2>General Usage</h2> </center>
