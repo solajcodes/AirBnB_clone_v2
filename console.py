@@ -149,7 +149,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return
 
-        args_arr = args.split(" ");
+        args_arr = args.split(" ")
         print(args_arr)
 
         if args_arr[0] not in HBNBCommand.classes:
@@ -172,9 +172,9 @@ class HBNBCommand(cmd.Cmd):
                     try:
                         val = float(val)
                     except ValueError:
-                        return
+                        continue
 
-            setattr(new_instance, key, val);
+            setattr(new_instance, key, val)
 
         storage.save()
         print(new_instance.id)
