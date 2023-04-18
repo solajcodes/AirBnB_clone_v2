@@ -8,7 +8,7 @@ This repository contains the second stage of a student project to build a clone 
 
 | Tasks | Files | Description |
 | ----- | ----- | ------ |
-| 0: Authors/README File | [AUTHORS](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/dev/AUTHORS) | Project authors |
+| 0: Authors/README File | [AUTHORS](https://github.com/Jesulayomy/AirBnB_clone_v2/blob/master/AUTHORS) | Project authors |
 <br>
 <br>
 <center> <h2>General Usage</h2> </center>
