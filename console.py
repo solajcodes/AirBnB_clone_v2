@@ -150,7 +150,6 @@ class HBNBCommand(cmd.Cmd):
             return
 
         args_arr = args.split(" ")
-        print(args_arr)
 
         if args_arr[0] not in HBNBCommand.classes:
             print("** class doesn't exist **")
@@ -158,7 +157,6 @@ class HBNBCommand(cmd.Cmd):
 
         new_instance = HBNBCommand.classes[args_arr[0]]()
         args_arr = args_arr[1:]
-        print(args_arr)
 
         for arg in args_arr:
             key, val = arg.split("=")
