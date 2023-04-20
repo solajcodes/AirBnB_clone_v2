@@ -62,6 +62,7 @@ class ConsoleTest(unittest.TestCase):
             HBNBCommand().onecmd("create Review")
             cls.review_id = f.getvalue()[:-1]
 
+    @unittest.skipIf(os.getenv('HBNB_TYPE_STORAGE') == 'db', "Using DB")
     def testquit(self):
         """ tests the quit command """
 
