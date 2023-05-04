@@ -2,7 +2,6 @@
 
 """ Packs the web_static to a tar """
 
-import os
 from fabric.api import local
 from datetime import datetime
 
@@ -10,8 +9,7 @@ from datetime import datetime
 def do_pack():
     """ A function to pack the current webstatic version """
 
-    if not os.path.exists('versions'):
-        os.makedirs('versions')
+    local('mkdir -p versions')
 
     current = datetime.now()
     filename = "versions/web_static_{}{}{}{}{}{}.tgz".format(
@@ -20,7 +18,7 @@ def do_pack():
 
     path = local('tar -cvzf {} web_static'.format(filename))
     if path.succeeded:
-        print(f"Packed webstatic to {filename}")
+        print("Packed webstatic to {}".format(filename))
         return filename
     else:
         return None

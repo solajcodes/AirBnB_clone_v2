@@ -3,7 +3,7 @@
 """ Deploys a web static to servers based on some weird shit """
 
 import os
-from fabric.api import *
+from fabric.api import env, local, put, run
 
 
 env.user = 'ubuntu'
@@ -13,7 +13,7 @@ env.hosts = ['18.234.106.179', '34.207.83.122']
 def do_deploy(archive_path):
     """ Deploys a webstatic to a webserver """
 
-    if not os.path.exists(archive_path) or not os.path.isfile(archive_path):
+    if not os.path.isfile(archive_path):
         return False
 
     packname = archive_path.split("versions/")[-1]
@@ -30,6 +30,6 @@ def do_deploy(archive_path):
     run('rm -rf {}/web_static/'.format(comppath))
     run('rm -rf /data/web_static/current')
     run('ln -sf {} /data/web_static/current'.format(comppath))
-    print("Uploaded {} to servers".format(archive_path))
+    print("New version deployed!")
 
     return True
